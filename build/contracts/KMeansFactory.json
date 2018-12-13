@@ -1,0 +1,1199 @@
+{
+  "contractName": "KMeansFactory",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "enigmaAddress",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x44f97995"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "kMeansModels",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0xcc10db26"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_enigmaAddress",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor",
+      "signature": "constructor"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "createNewKmeansModel",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0x29108fdf"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getKMeansModels",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address[]"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0xa0cde0ae"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5060405160208061095e833981016040525160008054600160a060020a03909216600160a060020a031990921691909117905561090c806100526000396000f3006080604052600436106100615763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166329108fdf811461006657806344f979951461007d578063a0cde0ae146100ae578063cc10db2614610113575b600080fd5b34801561007257600080fd5b5061007b61012b565b005b34801561008957600080fd5b506100926101d4565b60408051600160a060020a039092168252519081900360200190f35b3480156100ba57600080fd5b506100c36101e3565b60408051602080825283518183015283519192839290830191858101910280838360005b838110156100ff5781810151838201526020016100e7565b505050509050019250505060405180910390f35b34801561011f57600080fd5b50610092600435610245565b60008054600160a060020a03163361014161026d565b600160a060020a03928316815291166020820152604080519182900301906000f080158015610174573d6000803e3d6000fd5b506001805480820182556000919091527fb10e2d527612073b26eecdfd717e6a320cf44b4afac2b0732d9fcbe2b7fa0cf601805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a039290921691909117905550565b600054600160a060020a031681565b6060600180548060200260200160405190810160405280929190818152602001828054801561023b57602002820191906000526020600020905b8154600160a060020a0316815260019091019060200180831161021d575b5050505050905090565b600180548290811061025357fe5b600091825260209091200154600160a060020a0316905081565b6040516106638061027e833901905600608060405234801561001057600080fd5b5060405160408061066383398101604052805160209091015160008054600160a060020a03928316600160a060020a031991821617909155600180549290931691161790556105ff806100646000396000f3006080604052600436106100b95763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416633a163fa981146100be578063677342ce146100eb578063685bdc551461010357806377956e301461011857806379e6a114146101305780637ab48cce146101855780638da5cb5b146101a657806392374f9c146101d7578063999c2190146102305780639dafc39914610245578063aff27bcd1461025d578063b24fd5c514610272575b600080fd5b3480156100ca57600080fd5b506100d9600435602435610287565b60408051918252519081900360200190f35b3480156100f757600080fd5b506100d96004356102c1565b34801561010f57600080fd5b506100d9610323565b34801561012457600080fd5b506100d9600435610329565b34801561013c57600080fd5b50604080516020600480358082013583810280860185019096528085526100d9953695939460249493850192918291850190849080828437509497506103489650505050505050565b34801561019157600080fd5b506100d9600160a060020a0360043516610451565b3480156101b257600080fd5b506101bb610463565b60408051600160a060020a039092168252519081900360200190f35b3480156101e357600080fd5b506040805160206004803580820135838102808601850190965280855261022e9536959394602494938501929182918501908490808284375094975050933594506104729350505050565b005b34801561023c57600080fd5b506100d9610543565b34801561025157600080fd5b5061022e600435610549565b34801561026957600080fd5b506100d96105a6565b34801561027e57600080fd5b506101bb6105c4565b600680548390811061029557fe5b90600052602060002001818154811015156102ac57fe5b90600052602060002001600091509150505481565b6000808215156102d4576000915061031d565b600383116102e5576001915061031d565b50819050600260018201045b8181101561031d57809150600281828581151561030a57fe5b040181151561031557fe5b0490506102f1565b50919050565b60045481565b600380548290811061033757fe5b600091825260209091200154905081565b600080808080805b6005548410156104475760009250600091505b60045482101561041357868281518110151561037b57fe5b9060200190602002015160068581548110151561039457fe5b90600052602060002001838154811015156103ab57fe5b90600052602060002001540387838151811015156103c557fe5b906020019060200201516006868154811015156103de57fe5b90600052602060002001848154811015156103f557fe5b90600052602060002001540302830192508180600101925050610363565b61041c836102c1565b905083151561042d5780945061043c565b8085111561043c578094508395505b600190930192610350565b5050505050919050565b60026020526000908152604090205481565b600054600160a060020a031681565b60015460009081908190600160a060020a0316331461049057600080fd5b83855181151561049c57fe5b06156104a757600080fd5b6004849055845184908115156104b957fe5b04600555600092508291505b60055482101561053c575060005b838110156105315784838151811015156104e957fe5b9060200190602002015160068381548110151561050257fe5b906000526020600020018281548110151561051957fe5b600091825260209091200155600192830192016104d3565b6001909101906104c5565b5050505050565b60055481565b600154600160a060020a0316331461056057600080fd5b600154600160a060020a0316600090815260026020526040808220839055517ffa6b2fa56bfe305041a2170756c9ee87984e5078d2533f89642c6ded5ff6a9029190a150565b600154600160a060020a031660009081526002602052604090205490565b600154600160a060020a0316815600a165627a7a72305820b328e2223303c100b61cf1ab77d64e22009f4288191266fe04407779b9afe4bb0029a165627a7a72305820314058329b5903652e3c052b86a21ed57e73a1c7a580eea6f1422cf7e85b9c5d0029",
+  "deployedBytecode": "0x6080604052600436106100615763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166329108fdf811461006657806344f979951461007d578063a0cde0ae146100ae578063cc10db2614610113575b600080fd5b34801561007257600080fd5b5061007b61012b565b005b34801561008957600080fd5b506100926101d4565b60408051600160a060020a039092168252519081900360200190f35b3480156100ba57600080fd5b506100c36101e3565b60408051602080825283518183015283519192839290830191858101910280838360005b838110156100ff5781810151838201526020016100e7565b505050509050019250505060405180910390f35b34801561011f57600080fd5b50610092600435610245565b60008054600160a060020a03163361014161026d565b600160a060020a03928316815291166020820152604080519182900301906000f080158015610174573d6000803e3d6000fd5b506001805480820182556000919091527fb10e2d527612073b26eecdfd717e6a320cf44b4afac2b0732d9fcbe2b7fa0cf601805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a039290921691909117905550565b600054600160a060020a031681565b6060600180548060200260200160405190810160405280929190818152602001828054801561023b57602002820191906000526020600020905b8154600160a060020a0316815260019091019060200180831161021d575b5050505050905090565b600180548290811061025357fe5b600091825260209091200154600160a060020a0316905081565b6040516106638061027e833901905600608060405234801561001057600080fd5b5060405160408061066383398101604052805160209091015160008054600160a060020a03928316600160a060020a031991821617909155600180549290931691161790556105ff806100646000396000f3006080604052600436106100b95763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416633a163fa981146100be578063677342ce146100eb578063685bdc551461010357806377956e301461011857806379e6a114146101305780637ab48cce146101855780638da5cb5b146101a657806392374f9c146101d7578063999c2190146102305780639dafc39914610245578063aff27bcd1461025d578063b24fd5c514610272575b600080fd5b3480156100ca57600080fd5b506100d9600435602435610287565b60408051918252519081900360200190f35b3480156100f757600080fd5b506100d96004356102c1565b34801561010f57600080fd5b506100d9610323565b34801561012457600080fd5b506100d9600435610329565b34801561013c57600080fd5b50604080516020600480358082013583810280860185019096528085526100d9953695939460249493850192918291850190849080828437509497506103489650505050505050565b34801561019157600080fd5b506100d9600160a060020a0360043516610451565b3480156101b257600080fd5b506101bb610463565b60408051600160a060020a039092168252519081900360200190f35b3480156101e357600080fd5b506040805160206004803580820135838102808601850190965280855261022e9536959394602494938501929182918501908490808284375094975050933594506104729350505050565b005b34801561023c57600080fd5b506100d9610543565b34801561025157600080fd5b5061022e600435610549565b34801561026957600080fd5b506100d96105a6565b34801561027e57600080fd5b506101bb6105c4565b600680548390811061029557fe5b90600052602060002001818154811015156102ac57fe5b90600052602060002001600091509150505481565b6000808215156102d4576000915061031d565b600383116102e5576001915061031d565b50819050600260018201045b8181101561031d57809150600281828581151561030a57fe5b040181151561031557fe5b0490506102f1565b50919050565b60045481565b600380548290811061033757fe5b600091825260209091200154905081565b600080808080805b6005548410156104475760009250600091505b60045482101561041357868281518110151561037b57fe5b9060200190602002015160068581548110151561039457fe5b90600052602060002001838154811015156103ab57fe5b90600052602060002001540387838151811015156103c557fe5b906020019060200201516006868154811015156103de57fe5b90600052602060002001848154811015156103f557fe5b90600052602060002001540302830192508180600101925050610363565b61041c836102c1565b905083151561042d5780945061043c565b8085111561043c578094508395505b600190930192610350565b5050505050919050565b60026020526000908152604090205481565b600054600160a060020a031681565b60015460009081908190600160a060020a0316331461049057600080fd5b83855181151561049c57fe5b06156104a757600080fd5b6004849055845184908115156104b957fe5b04600555600092508291505b60055482101561053c575060005b838110156105315784838151811015156104e957fe5b9060200190602002015160068381548110151561050257fe5b906000526020600020018281548110151561051957fe5b600091825260209091200155600192830192016104d3565b6001909101906104c5565b5050505050565b60055481565b600154600160a060020a0316331461056057600080fd5b600154600160a060020a0316600090815260026020526040808220839055517ffa6b2fa56bfe305041a2170756c9ee87984e5078d2533f89642c6ded5ff6a9029190a150565b600154600160a060020a031660009081526002602052604090205490565b600154600160a060020a0316815600a165627a7a72305820b328e2223303c100b61cf1ab77d64e22009f4288191266fe04407779b9afe4bb0029a165627a7a72305820314058329b5903652e3c052b86a21ed57e73a1c7a580eea6f1422cf7e85b9c5d0029",
+  "sourceMap": "49:629:1:-;;;200:84;8:9:-1;5:2;;;30:1;27;20:12;5:2;200:84:1;;;;;;;;;;;;;249:13;:30;;-1:-1:-1;;;;;249:30:1;;;-1:-1:-1;;;;;;249:30:1;;;;;;;;;49:629;;;;;;",
+  "deployedSourceMap": "49:629:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;352:177;;8:9:-1;5:2;;;30:1;27;20:12;5:2;352:177:1;;;;;;76:28;;8:9:-1;5:2;;;30:1;27;20:12;5:2;76:28:1;;;;;;;;-1:-1:-1;;;;;76:28:1;;;;;;;;;;;;;;588:88;;8:9:-1;5:2;;;30:1;27;20:12;5:2;588:88:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:100:-1;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;588:88:1;;;;;;;;;;;;;;;;;166:29;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;166:29:1;;;;;352:177;397:22;442:13;;-1:-1:-1;;;;;442:13:1;465:10;422:61;;:::i;:::-;-1:-1:-1;;;;;422:61:1;;;;;;;;;;;;;;;;;;;;-1:-1:-1;422:61:1;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;-1:-1;491:12:1;27:10:-1;;23:18;;;45:23;;-1:-1;491:33:1;;;;;;;;-1:-1:-1;;491:33:1;-1:-1:-1;;;;;491:33:1;;;;;;;;;;-1:-1:-1;352:177:1:o;76:28::-;;;-1:-1:-1;;;;;76:28:1;;:::o;588:88::-;635:9;659:12;652:19;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;652:19:1;;;;;;;;;;;;;;;;;;;;;;;588:88;:::o;166:29::-;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;166:29:1;;-1:-1:-1;166:29:1;:::o;49:629::-;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.20;\nimport \"./KMeans.sol\";\n\ncontract KMeansFactory {\n  address public enigmaAddress;\n  // List of addresses for deployed KmeansModel instances\n  address[] public kMeansModels;\n\n  constructor(address _enigmaAddress) public {\n    enigmaAddress = _enigmaAddress;\n  }\n\n  // Create a new Kmeansmodel and store the address to an array\n  function createNewKmeansModel() public {\n    address newKMeansModel = new KMeans(\n        enigmaAddress,\n        msg.sender\n      );\n      kMeansModels.push(newKMeansModel);\n  }\n\n  //Obtain list of all deployed KmeansModels instances\n  function getKMeansModels() public view returns(address[]) {\n    return kMeansModels;\n  }\n}\n",
+  "sourcePath": "/Users/Koji/Enigma-Dapp-Example/contracts/KMeansFactory.sol",
+  "ast": {
+    "absolutePath": "/Users/Koji/Enigma-Dapp-Example/contracts/KMeansFactory.sol",
+    "exportedSymbols": {
+      "KMeansFactory": [
+        354
+      ]
+    },
+    "id": 355,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 309,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".20"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "absolutePath": "/Users/Koji/Enigma-Dapp-Example/contracts/KMeans.sol",
+        "file": "./KMeans.sol",
+        "id": 310,
+        "nodeType": "ImportDirective",
+        "scope": 355,
+        "sourceUnit": 308,
+        "src": "25:22:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [
+          307
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 354,
+        "linearizedBaseContracts": [
+          354
+        ],
+        "name": "KMeansFactory",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 312,
+            "name": "enigmaAddress",
+            "nodeType": "VariableDeclaration",
+            "scope": 354,
+            "src": "76:28:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 311,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "76:7:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 315,
+            "name": "kMeansModels",
+            "nodeType": "VariableDeclaration",
+            "scope": 354,
+            "src": "166:29:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_address_$dyn_storage",
+              "typeString": "address[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 313,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "166:7:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "id": 314,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "166:9:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                "typeString": "address[]"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 324,
+              "nodeType": "Block",
+              "src": "243:41:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 322,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 320,
+                      "name": "enigmaAddress",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 312,
+                      "src": "249:13:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 321,
+                      "name": "_enigmaAddress",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 317,
+                      "src": "265:14:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "249:30:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 323,
+                  "nodeType": "ExpressionStatement",
+                  "src": "249:30:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 325,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 318,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 317,
+                  "name": "_enigmaAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 325,
+                  "src": "212:22:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 316,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "212:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "211:24:1"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 319,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "243:0:1"
+            },
+            "scope": 354,
+            "src": "200:84:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 343,
+              "nodeType": "Block",
+              "src": "391:138:1",
+              "statements": [
+                {
+                  "assignments": [
+                    329
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 329,
+                      "name": "newKMeansModel",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 344,
+                      "src": "397:22:1",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      },
+                      "typeName": {
+                        "id": 328,
+                        "name": "address",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "397:7:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 336,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 332,
+                        "name": "enigmaAddress",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 312,
+                        "src": "442:13:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 333,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 951,
+                          "src": "465:3:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 334,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "465:10:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 331,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "NewExpression",
+                      "src": "422:10:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_creation_nonpayable$_t_address_$_t_address_$returns$_t_contract$_KMeans_$307_$",
+                        "typeString": "function (address,address) returns (contract KMeans)"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 330,
+                        "name": "KMeans",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 307,
+                        "src": "426:6:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_KMeans_$307",
+                          "typeString": "contract KMeans"
+                        }
+                      }
+                    },
+                    "id": 335,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "422:61:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_KMeans_$307",
+                      "typeString": "contract KMeans"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "397:86:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 340,
+                        "name": "newKMeansModel",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 329,
+                        "src": "509:14:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 337,
+                        "name": "kMeansModels",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 315,
+                        "src": "491:12:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_address_$dyn_storage",
+                          "typeString": "address[] storage ref"
+                        }
+                      },
+                      "id": 339,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "push",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "491:17:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_address_$returns$_t_uint256_$",
+                        "typeString": "function (address) returns (uint256)"
+                      }
+                    },
+                    "id": 341,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "491:33:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 342,
+                  "nodeType": "ExpressionStatement",
+                  "src": "491:33:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 344,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "createNewKmeansModel",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 326,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "381:2:1"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 327,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "391:0:1"
+            },
+            "scope": 354,
+            "src": "352:177:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 352,
+              "nodeType": "Block",
+              "src": "646:30:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 350,
+                    "name": "kMeansModels",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 315,
+                    "src": "659:12:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage",
+                      "typeString": "address[] storage ref"
+                    }
+                  },
+                  "functionReturnParameters": 349,
+                  "id": 351,
+                  "nodeType": "Return",
+                  "src": "652:19:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 353,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getKMeansModels",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 345,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "612:2:1"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 349,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 348,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 353,
+                  "src": "635:9:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 346,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "635:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 347,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "635:9:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "634:11:1"
+            },
+            "scope": 354,
+            "src": "588:88:1",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 355,
+        "src": "49:629:1"
+      }
+    ],
+    "src": "0:679:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/Koji/Enigma-Dapp-Example/contracts/KMeansFactory.sol",
+    "exportedSymbols": {
+      "KMeansFactory": [
+        354
+      ]
+    },
+    "id": 355,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 309,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".20"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "absolutePath": "/Users/Koji/Enigma-Dapp-Example/contracts/KMeans.sol",
+        "file": "./KMeans.sol",
+        "id": 310,
+        "nodeType": "ImportDirective",
+        "scope": 355,
+        "sourceUnit": 308,
+        "src": "25:22:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [
+          307
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 354,
+        "linearizedBaseContracts": [
+          354
+        ],
+        "name": "KMeansFactory",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 312,
+            "name": "enigmaAddress",
+            "nodeType": "VariableDeclaration",
+            "scope": 354,
+            "src": "76:28:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 311,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "76:7:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 315,
+            "name": "kMeansModels",
+            "nodeType": "VariableDeclaration",
+            "scope": 354,
+            "src": "166:29:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_address_$dyn_storage",
+              "typeString": "address[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 313,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "166:7:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "id": 314,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "166:9:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                "typeString": "address[]"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 324,
+              "nodeType": "Block",
+              "src": "243:41:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 322,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 320,
+                      "name": "enigmaAddress",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 312,
+                      "src": "249:13:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 321,
+                      "name": "_enigmaAddress",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 317,
+                      "src": "265:14:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "249:30:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 323,
+                  "nodeType": "ExpressionStatement",
+                  "src": "249:30:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 325,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 318,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 317,
+                  "name": "_enigmaAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 325,
+                  "src": "212:22:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 316,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "212:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "211:24:1"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 319,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "243:0:1"
+            },
+            "scope": 354,
+            "src": "200:84:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 343,
+              "nodeType": "Block",
+              "src": "391:138:1",
+              "statements": [
+                {
+                  "assignments": [
+                    329
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 329,
+                      "name": "newKMeansModel",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 344,
+                      "src": "397:22:1",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      },
+                      "typeName": {
+                        "id": 328,
+                        "name": "address",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "397:7:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 336,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 332,
+                        "name": "enigmaAddress",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 312,
+                        "src": "442:13:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 333,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 951,
+                          "src": "465:3:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 334,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "465:10:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 331,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "NewExpression",
+                      "src": "422:10:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_creation_nonpayable$_t_address_$_t_address_$returns$_t_contract$_KMeans_$307_$",
+                        "typeString": "function (address,address) returns (contract KMeans)"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 330,
+                        "name": "KMeans",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 307,
+                        "src": "426:6:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_KMeans_$307",
+                          "typeString": "contract KMeans"
+                        }
+                      }
+                    },
+                    "id": 335,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "422:61:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_KMeans_$307",
+                      "typeString": "contract KMeans"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "397:86:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 340,
+                        "name": "newKMeansModel",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 329,
+                        "src": "509:14:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 337,
+                        "name": "kMeansModels",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 315,
+                        "src": "491:12:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_address_$dyn_storage",
+                          "typeString": "address[] storage ref"
+                        }
+                      },
+                      "id": 339,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "push",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "491:17:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_address_$returns$_t_uint256_$",
+                        "typeString": "function (address) returns (uint256)"
+                      }
+                    },
+                    "id": 341,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "491:33:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 342,
+                  "nodeType": "ExpressionStatement",
+                  "src": "491:33:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 344,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "createNewKmeansModel",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 326,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "381:2:1"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 327,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "391:0:1"
+            },
+            "scope": 354,
+            "src": "352:177:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 352,
+              "nodeType": "Block",
+              "src": "646:30:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 350,
+                    "name": "kMeansModels",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 315,
+                    "src": "659:12:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage",
+                      "typeString": "address[] storage ref"
+                    }
+                  },
+                  "functionReturnParameters": 349,
+                  "id": 351,
+                  "nodeType": "Return",
+                  "src": "652:19:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 353,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getKMeansModels",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 345,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "612:2:1"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 349,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 348,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 353,
+                  "src": "635:9:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 346,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "635:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 347,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "635:9:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "634:11:1"
+            },
+            "scope": 354,
+            "src": "588:88:1",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 355,
+        "src": "49:629:1"
+      }
+    ],
+    "src": "0:679:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {
+    "1544199686423": {
+      "events": {},
+      "links": {},
+      "address": "0x0998C21BEFE9099c994D751b2F5daC4B17f6f0bA",
+      "transactionHash": "0x640e82e6fd6e5c12f83a20cb92cfb91deb61077e3ebaba413b5484d06e3e60d1"
+    }
+  },
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-12-12T20:37:07.891Z"
+}
